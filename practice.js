@@ -87,7 +87,7 @@ var hobbies = {"reading", "space", "dance"};
 // Create a variable called gameScores which should be an array with 3 items in it
 // Each item should be an array with 2 items (numbers) in each array
 
-var gameScores = [[4, 2], [8, 9][3, 1]];ß
+var gameScores = [[4, 2], [8, 9], [3, 1]];
 
 
 
@@ -96,7 +96,7 @@ var gameScores = [[4, 2], [8, 9][3, 1]];ß
 // Create a variable called people which should be an array of 3 objects
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
-//Code here
+var people = [{"Ryan", "Female", 62}, {"Tessa", "Female", 64}, {"Lorelei", "Female", 44}];
 
 
 
@@ -135,8 +135,7 @@ function launch() {
 //   the function launch (provided for you)
 
 
-//Code here
-
+var dataTypes = [42, "meaning", true, [1,2,3,4,5],   ];
 
 
 //////////////////PROBLEM 13////////////////////
