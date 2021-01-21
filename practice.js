@@ -4,8 +4,9 @@
 // Make a variable named greeting with a data type of string that says "Hi" (with double quotes)
 // After the first variable, make a variable named farewell with a data type of string that says 'Goodbye' (with single quotes)
 
-// Code here
+var greeting = "Hi";
 
+var farewell = 'Goodbye';
 
 
 //////////////////PROBLEM 2////////////////////
@@ -14,7 +15,9 @@
 // Next, make a variable called userName with data types of string that is your name
 // Concatenate hello and userName together and store the result in a variable called salutation
 
-//Code here
+var hello = "Hello";
+var userName = "Ryan";
+var salutation = "hello" + "userName";
 
 
 
@@ -22,7 +25,7 @@
 
 //Create a variable called seven that has a number data type with the value of 7
 
-//Code here
+var seven = 7;
 
 
 
@@ -31,7 +34,7 @@
 // Make a variable called money with a value equal to the amount you wish to have in your bank account in 2 years
 // This datatype should be a number
 
-//Code here
+var money = 50000;
 
 
 
@@ -39,7 +42,7 @@
 
 // Make a variable called awesome and give it a value of the boolean data type true
 
-//Code here
+var awesome = true;
 
 
 
@@ -53,7 +56,7 @@ let myCar = "Jeep";
 // Set the variable myCar to be null
 
 
-//Code here
+var myCar = null;
 
 
 
@@ -62,7 +65,8 @@ let myCar = "Jeep";
 // Create a variable called users which should be an array with 4 items in it
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
-//Code here
+var object = {"Ryan": 40, "Josie": 42, "Chad": 42, "Tessa": 16};
+var users = ["Ryan", "Josie", "Chad", "Tessa"];
 
 
 
@@ -73,7 +77,8 @@ let myCar = "Jeep";
 // Each property will have a corresponding value which will be an object with one property called "hobbies"
 // Each hobbies property will have a corresponding value which will be an object
 
-//Code here
+var family = {"Addie": hobbies, "Juliette": hobbies, "Lorelei": hobbies};
+var hobbies = {"reading", "space", "dance"};
 
 
 
@@ -82,7 +87,7 @@ let myCar = "Jeep";
 // Create a variable called gameScores which should be an array with 3 items in it
 // Each item should be an array with 2 items (numbers) in each array
 
-//Code here
+var gameScores = [[4, 2], [8, 9][3, 1]];ß
 
 
 
