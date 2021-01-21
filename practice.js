@@ -6,6 +6,7 @@
 
 var greeting = "Hi";
 
+
 var farewell = 'Goodbye';
 
 
