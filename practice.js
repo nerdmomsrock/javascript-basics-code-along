@@ -57,7 +57,7 @@ let myCar = "Jeep";
 // Set the variable myCar to be null
 
 
-var myCar = null;
+myCar = null;
 
 
 
@@ -66,9 +66,7 @@ var myCar = null;
 // Create a variable called users which should be an array with 4 items in it
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
-var object = {"Ryan": 40, "Josie": 42, "Chad": 42, "Tessa": 16};
-var users = ["Ryan", "Josie", "Chad", "Tessa"];
-
+let users = [{"Ryan": 40}, {"Josie": 42}, {"Chad": 42}, {"Dylan": 35}];
 
 
 //////////////////PROBLEM 8////////////////////
@@ -78,8 +76,11 @@ var users = ["Ryan", "Josie", "Chad", "Tessa"];
 // Each property will have a corresponding value which will be an object with one property called "hobbies"
 // Each hobbies property will have a corresponding value which will be an object
 
-var family = {"Addie": hobbies, "Juliette": hobbies, "Lorelei": hobbies};
-var hobbies = {"reading", "space", "dance"};
+let family = {"Addie": {hobbies: ["dance"]}, 
+"Juliette": {hobbies: ["reading"]},
+"Lorelei": {hobbies: ["Minecraft"]}
+};
+
 
 
 
@@ -97,7 +98,7 @@ var gameScores = [[4, 2], [8, 9], [3, 1]];
 // Create a variable called people which should be an array of 3 objects
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
-var people = [{"Ryan", "Female", 62}, {"Tessa", "Female", 64}, {"Lorelei", "Female", 44}];
+let people = [["Ryan", "Female", 62], ["Tessa", "Female", 64], ["Lorelei", "Female", 44]];
 
 
 
@@ -109,6 +110,12 @@ var people = [{"Ryan", "Female", 62}, {"Tessa", "Female", 64}, {"Lorelei", "Fema
 //Code here
 
 
+
+let cowboy = {
+  name: "Ryan", 
+  state: "Oklahoma",
+  favoriteCountrySong: "There's a Tear in my Beer"
+};
 
 //////////////////PROBLEM 12////////////////////
 
@@ -136,7 +143,7 @@ function launch() {
 //   the function launch (provided for you)
 
 
-var dataTypes = [42, "meaning", true, [1,2,3,4,5],   ];
+var dataTypes = [42, "meaning", true, [1,2,3,4,5], spaceship, launch()];
 
 
 //////////////////PROBLEM 13////////////////////
@@ -144,8 +151,9 @@ var dataTypes = [42, "meaning", true, [1,2,3,4,5],   ];
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2){
-  return // Code here
+  return num1 + num2
 };
+sum (8, 239)
   
 
   
@@ -154,12 +162,14 @@ function sum(num1, num2){
 // Create two variables number1 and number2 and assign them number values
 
 // Code here
+let number1 = 42;
+let number2 = 59;
 
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
-function multiply() {
-  return // Code here
+function multiply(number1 * number2) {
+  return multiply
 };
 
 
@@ -174,9 +184,10 @@ let food = 'pizza';
 // Edit the function favFood so that when it is invoked it returns the string "My favorite food is pizza"
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
-function favFood(){
-  return // Code here
+function favFood(food){
+  return `My favorite food is ${food}`
 };
+favFood(food);
 
 
 
@@ -192,8 +203,9 @@ let theBoss;
 // the function assigns the value of theName to theBoss variable
 
 function assignName(name){
-  // Code here
+  return theBoss = theName
 };
+assignName()
 
 
 
@@ -501,3 +513,12 @@ function sleep(){
 // The arguments passed into decisionMaker will always be true or false and will be changed during testing
 
 // Code here
+function decisionMaker (hungry, tired) {
+  if (hungry && !tired) {
+  return eat ()
+  } if (!hungry && tired) {
+    return sleep() 
+  }else {
+    return "undecided"
+  }
+};
