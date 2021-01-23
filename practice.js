@@ -18,7 +18,7 @@ var farewell = 'Goodbye';
 
 var hello = "Hello";
 var userName = "Ryan";
-var salutation = "hello" + "userName";
+var salutation = hello + userName;
 
 
 
@@ -66,7 +66,7 @@ myCar = null;
 // Create a variable called users which should be an array with 4 items in it
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
-let users = [{"Ryan": 40}, {"Josie": 42}, {"Chad": 42}, {"Dylan": 35}];
+let users = [{"Ryan":40}, {"Josie":42}, {"Chad":42}, {"Dylan":35}];
 
 
 //////////////////PROBLEM 8////////////////////
@@ -168,9 +168,10 @@ let number2 = 59;
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
-function multiply(number1 * number2) {
-  return multiply
+function multiply(number1, number2) {
+  return number1 * number2 
 };
+
 
 
 
@@ -223,8 +224,8 @@ let user = {
 // Using the user object provided,
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
-function getName(userObj){
-  return // Code here
+function getName(user){
+  return user.name 
 };
 
 
@@ -246,7 +247,7 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
+  return calendar.weekDays[2]
 }
 
 
@@ -255,7 +256,10 @@ function getWeekDay(calendar){
 
 // Create a function called "fn" that takes in a parameter and returns that parameter
 
-// Code here
+function fn(x) {
+  return x 
+};
+
 
 
 
@@ -271,6 +275,9 @@ let lastName = "Jones";
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
 // Code here
+function createName () {
+  return firstName + lastName
+};
 
 
 
@@ -279,7 +286,9 @@ let lastName = "Jones";
 // Create a function called showMeSeven that returns the number 7
 
 // Code here
-
+function showMeSeven () {
+  return 7
+};
 
 
 //////////////////PROBLEM 22////////////////////
@@ -287,7 +296,9 @@ let lastName = "Jones";
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
 // Code here
-
+function multiplier (num1, num2) {
+  return num1 * num2
+};
 
 
 //////////////////PROBLEM 23////////////////////
@@ -297,7 +308,9 @@ let lastName = "Jones";
 // The returned value should include a space between the greeting and name parameters
 
 // Code here
-
+function sayHello (greeting, name) {
+  return "greeting" + "name"
+}
 
 
 //////////////////PROBLEM 24////////////////////
@@ -308,7 +321,9 @@ let lastName = "Jones";
   // the second property should be duration with the value of the second parameter
 
 // Code here
-
+function makeExercise (exerciseName, duration) {
+  return {exerciseName: exerciseName, duration:duration}
+};
 
 
 //////////////////PROBLEM 25////////////////////
@@ -323,7 +338,11 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough(){
-  // Code here
+  if (age > 21){
+    return "old enough"
+  } else {
+    return "not yet"
+  }
 };
 
 
@@ -340,7 +359,11 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor(){
-  // Code here
+  if (workEthic = "great") {
+    return "success at DevMountain"
+  } else {
+    return "failure at DevMountain"
+  }
 };
 
 
@@ -357,7 +380,11 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash(){
-  // Code here
+  if (cookieType = "raisin") {
+    return "throw in trash"
+  } else {
+  return "eat"
+  }
 };
 
 
@@ -375,7 +402,11 @@ let yourTeamScore = "TBD";
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore(){
-  // Code here
+  if (myTeamScore > yourTeamScore) {
+    return "we are the champions"
+  } else {
+    return ":("
+  }
 };
 
 
@@ -396,7 +427,13 @@ age = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function findCorrectTransportation(){
-  // Code here
+  if (age >= 3 && age <= 7){
+    return "tricycle"
+  } if (age >= 8 && age <= 15) {
+    return "bicycle"
+  } if (age > 15) {
+    return "car"
+  }
 };
 
 
@@ -417,7 +454,11 @@ let temp = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream(){
-  // Code here
+  if (temp = "hot" && cash) {
+    return "Get Ice Cream!"
+  } else {
+    return "Save up for another day!"
+  }
 };
 
 
@@ -437,7 +478,9 @@ let work = "TBD";
 // The chores and work variables will always be true or false and will be changed during testing
 
 function doIHaveFreeTime(){
-  // Code here
+  if (!chores || !work) {
+    return "free time!"
+  }
 };
 
 
@@ -459,7 +502,9 @@ let brakes = "TBD";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash(){
-  // Code here
+  if (currentSpeed = "fast" && !brakes) {
+    return !crash
+  }
 };
 
 
@@ -481,7 +526,11 @@ user = {
 // Use the if and else keywords in your solution
 // The arguments passed into makePurchase will always be numbers and will be changed during testing
 
-// Code here
+function makePurchase (priceOfItem) {
+  if (priceOfItem <= user.total) {
+    return makePurchase - priceOfItem
+  }
+}
 
 
 
