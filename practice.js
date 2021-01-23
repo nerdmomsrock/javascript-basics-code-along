@@ -66,7 +66,12 @@ myCar = null;
 // Create a variable called users which should be an array with 4 items in it
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
-let users = [{"Ryan":40}, {"Josie":42}, {"Chad":42}, {"Dylan":35}];
+let users = [
+  {name: "Ryan", age: 40}, 
+{name: "Josie", age: 42}, 
+{name: "Chad", age: 42}, 
+{name: "Dylan", age: 35}
+];
 
 
 //////////////////PROBLEM 8////////////////////
@@ -76,9 +81,10 @@ let users = [{"Ryan":40}, {"Josie":42}, {"Chad":42}, {"Dylan":35}];
 // Each property will have a corresponding value which will be an object with one property called "hobbies"
 // Each hobbies property will have a corresponding value which will be an object
 
-let family = {"Addie": {hobbies: ["dance"]}, 
-"Juliette": {hobbies: ["reading"]},
-"Lorelei": {hobbies: ["Minecraft"]}
+let family = {
+"Addie": {hobbies: {}}, 
+"Juliette": {hobbies: {}},
+"Lorelei": {hobbies: {}}
 };
 
 
@@ -98,7 +104,11 @@ var gameScores = [[4, 2], [8, 9], [3, 1]];
 // Create a variable called people which should be an array of 3 objects
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
-let people = [["Ryan", "Female", 62], ["Tessa", "Female", 64], ["Lorelei", "Female", 44]];
+let people = [
+  {name: "Ryan", gender: "Female", height: 62}, 
+  {name: "Tessa", gender: "Female", height: 64}, 
+  {name: "Lorelei", gender: "Female", height: 44}
+];
 
 
 
@@ -143,7 +153,7 @@ function launch() {
 //   the function launch (provided for you)
 
 
-var dataTypes = [42, "meaning", true, [1,2,3,4,5], spaceship, launch()];
+var dataTypes = [42, "meaning", true, [1,2,3,4,5], spaceship, launch];
 
 
 //////////////////PROBLEM 13////////////////////
@@ -168,9 +178,10 @@ let number2 = 59;
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
-function multiply(number1, number2) {
+function multiply() {
   return number1 * number2 
 };
+
 
 
 
@@ -185,10 +196,10 @@ let food = 'pizza';
 // Edit the function favFood so that when it is invoked it returns the string "My favorite food is pizza"
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
-function favFood(food){
+function favFood(){
   return `My favorite food is ${food}`
 };
-favFood(food);
+
 
 
 
@@ -276,8 +287,9 @@ let lastName = "Jones";
 
 // Code here
 function createName () {
-  return firstName + lastName
+  return firstName + " " + lastName
 };
+
 
 
 
@@ -309,8 +321,9 @@ function multiplier (num1, num2) {
 
 // Code here
 function sayHello (greeting, name) {
-  return "greeting" + "name"
-}
+  return greeting + " " + name
+};
+
 
 
 //////////////////PROBLEM 24////////////////////
@@ -359,7 +372,7 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor(){
-  if (workEthic = "great") {
+  if (workEthic === "great") {
     return "success at DevMountain"
   } else {
     return "failure at DevMountain"
@@ -380,7 +393,7 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash(){
-  if (cookieType = "raisin") {
+  if (cookieType === "raisin") {
     return "throw in trash"
   } else {
   return "eat"
@@ -454,10 +467,10 @@ let temp = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream(){
-  if (temp = "hot" && cash) {
+  if (temp === "hot" && cash) {
     return "Get Ice Cream!"
   } else {
-    return "Save up for another day!"
+    return "Save up for another day."
   }
 };
 
@@ -502,10 +515,11 @@ let brakes = "TBD";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash(){
-  if (currentSpeed = "fast" && !brakes) {
-    return !crash
+  if (currentSpeed === "fast" && !brakes) {
+    return crash = true
+  } 
   }
-};
+
 
 
 
@@ -527,8 +541,10 @@ user = {
 // The arguments passed into makePurchase will always be numbers and will be changed during testing
 
 function makePurchase (priceOfItem) {
-  if (priceOfItem <= user.total) {
-    return makePurchase - priceOfItem
+  if (`${priceOfItem} <= user.total`) {
+    return `user.total - ${priceOfItem}`
+  } else if (`${priceOfItem} > user.total`) {
+    return "not enough funds"
   }
 }
 
