@@ -335,7 +335,7 @@ function sayHello (greeting, name) {
 
 // Code here
 function makeExercise (exerciseName, duration) {
-  return {exerciseName: exerciseName, duration:duration}
+  return {exerciseName : exerciseName, duration: duration}
 };
 
 
