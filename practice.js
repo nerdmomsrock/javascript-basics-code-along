@@ -541,9 +541,9 @@ user = {
 // The arguments passed into makePurchase will always be numbers and will be changed during testing
 
 function makePurchase (priceOfItem) {
-  if (`${priceOfItem} <= user.total`) {
-    return `user.total - ${priceOfItem}`
-  } else if (`${priceOfItem} > user.total`) {
+  if (priceOfItem <= user.total) {
+    return user.total -= priceOfItem
+  } else {
     return "not enough funds"
   }
 };
