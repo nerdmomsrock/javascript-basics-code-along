@@ -546,7 +546,7 @@ function makePurchase (priceOfItem) {
   } else if (`${priceOfItem} > user.total`) {
     return "not enough funds"
   }
-}
+};
 
 
 
